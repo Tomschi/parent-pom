@@ -10,8 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>parent-pom</module>
-        <module>travis-parent-pom</module>
+        <module>oss-parent-pom</module>
     </modules>
 
     <url>http://github.com/Tomschi/parent-pom</url>

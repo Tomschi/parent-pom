@@ -5,32 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>parent-bom</artifactId>
         <groupId>com.github.tomschi</groupId>
+        <artifactId>parent-bom</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>travis-parent-pom</artifactId>
+    <artifactId>oss-parent-pom</artifactId>
     <packaging>pom</packaging>
 
     <properties>
         <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
         <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
     </properties>
-
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>false</filtering>
-            </resource>
-            <resource>
-                <directory>src/deploy-descriptors</directory>
-                <filtering>true</filtering>
-                <targetPath>${project.build.directory}/deploy-descriptors/</targetPath>
-            </resource>
-        </resources>
-    </build>
 
     <profiles>
         <profile>
@@ -64,4 +50,23 @@
         </profile>
     </profiles>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://jcenter.bintray.com/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://jcenter.bintray.com/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
