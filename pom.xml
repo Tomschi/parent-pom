@@ -9,10 +9,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>oss-parent-pom</module>
-    </modules>
-
     <url>http://github.com/Tomschi/parent-pom</url>
 
     <licenses>
