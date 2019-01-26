@@ -40,7 +40,6 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <multi-module.project>false</multi-module.project>
 
         <!-- dependency versions -->
 
@@ -279,13 +278,13 @@
                                         <publishArtifacts>true</publishArtifacts>
                                         <publishBuildInfo>true</publishBuildInfo>
                                     </publisher>
-                                    <!--<licenses>-->
-                                        <!--<autoDiscover>true</autoDiscover>-->
+                                    <licenses>
+                                        <autoDiscover>true</autoDiscover>
                                         <!--<includePublishedArtifacts>false</includePublishedArtifacts>-->
                                         <!--<runChecks>true</runChecks>-->
                                         <!--<scopes>compile,runtime</scopes>-->
                                         <!--<violationRecipients>build@organisation.com</violationRecipients>-->
-                                    <!--</licenses>-->
+                                    </licenses>
                                 </configuration>
                             </execution>
                         </executions>
