@@ -11,6 +11,10 @@
 
     <url>https://github.com/Tomschi/parent-pom</url>
 
+    <organization>
+        <name>Tomschi</name>
+    </organization>
+
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
