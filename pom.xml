@@ -9,7 +9,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <name>parent-pom</name>
     <url>https://github.com/Tomschi/parent-pom</url>
+    <inceptionYear>2019</inceptionYear>
 
     <organization>
         <name>Tomschi</name>
@@ -45,6 +47,8 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
+        <license.licenseName>apache_v2</license.licenseName>
+
         <!-- dependency versions -->
 
         <lombok.version>1.18.2</lombok.version>
@@ -71,8 +75,9 @@
 
         <!-- mojo plugin versions -->
 
-        <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
         <flatten-maven-plugin.version>1.0.1</flatten-maven-plugin.version>
+        <license-maven-plugin.version>1.16</license-maven-plugin.version>
+        <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
 
         <!-- other plugin versions -->
 
@@ -157,6 +162,11 @@
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>${license-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
                     <version>${versions-maven-plugin.version}</version>
                 </plugin>
@@ -193,6 +203,34 @@
                         <goals>
                             <goal>jar-no-fork</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>update-project</id>
+                        <goals>
+                            <goal>update-project-license</goal>
+                        </goals>
+                        <configuration>
+                            <licenseFile>${maven.multiModuleProjectDirectory}/LICENSE.txt</licenseFile>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>update-file</id>
+                        <goals>
+                            <goal>update-file-header</goal>
+                        </goals>
+                        <configuration>
+                            <roots>
+                                <root>src/main/java</root>
+                                <root>src/test/java</root>
+                            </roots>
+                            <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
