@@ -81,9 +81,9 @@
 
         <!-- other plugin versions -->
 
-        <artifactory-maven-plugin.version>2.6.1</artifactory-maven-plugin.version>
+        <artifactory-maven-plugin.version>2.7.0</artifactory-maven-plugin.version>
         <coveralls-maven-plugin.version>4.3.0</coveralls-maven-plugin.version>
-        <jacoco-maven-plugin.version>0.8.3</jacoco-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.4</jacoco-maven-plugin.version>
     </properties>
 
     <build>
