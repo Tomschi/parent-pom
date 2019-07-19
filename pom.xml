@@ -260,26 +260,6 @@
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://jcenter.bintray.com/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>central</id>
-            <url>https://jcenter.bintray.com/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
     <profiles>
         <profile>
             <id>travis</id>
