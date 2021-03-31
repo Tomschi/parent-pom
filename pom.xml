@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <name>parent-pom</name>
+    <description>A parent pom for com.github.tomschi projects.</description>
     <url>https://github.com/Tomschi/parent-pom</url>
     <inceptionYear>2019</inceptionYear>
 
