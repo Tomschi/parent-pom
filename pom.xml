@@ -6,7 +6,7 @@
 
     <groupId>com.github.tomschi</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>parent-pom</name>
