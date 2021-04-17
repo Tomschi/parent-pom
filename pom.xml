@@ -4,7 +4,7 @@
 
     <groupId>com.github.tomschi</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>parent-pom</name>
@@ -35,7 +35,7 @@
         <connection>scm:git:git://github.com/Tomschi/parent-pom.git</connection>
         <developerConnection>scm:git:ssh://github.com:Tomschi/parent-pom.git</developerConnection>
         <url>https://github.com/Tomschi/parent-pom</url>
-        <tag>v0.1.1</tag>
+        <tag>v${project.version}</tag>
     </scm>
 
     <properties>
